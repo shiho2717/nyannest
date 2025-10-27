@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql       # 使用するDBエンジン
+  encoding: unicode         # 日本語対応
+  pool: 5                   # 同時接続数
+  host: localhost           # 自分のPC（PostgreSQLサーバー）
+  username: nyannest        # さっき作ったDBユーザー
+  password: nyannest_pw     # そのパスワード
+
+development:
+  <<: *default
+  database: nyannest_development  # 開発用DB名
+
+test:
+  <<: *default
+  database: nyannest_test         # テスト用DB名
+
+production:
+  <<: *default
+  database: nyannest_production   # 本番用（まだ使わない）
+  username: nyannest
+  password: <%= ENV["NYANNEST_DATABASE_PASSWORD"] %>
