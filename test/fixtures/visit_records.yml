@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  visit_date: 2025-10-31
+  clinic_name: MyString
+  reason: 1
+  chief_complaint: MyString
+  diagnosis: MyText
+  treatment: MyText
+  medication_notes: MyText
+  weight_at_visit: 1.5
+  temperature_at_visit: 1.5
+  cost: 1
+  next_visit_on: 2025-10-31
+  memo: MyText
+  cat: one
+  user: one
+
+two:
+  visit_date: 2025-10-31
+  clinic_name: MyString
+  reason: 1
+  chief_complaint: MyString
+  diagnosis: MyText
+  treatment: MyText
+  medication_notes: MyText
+  weight_at_visit: 1.5
+  temperature_at_visit: 1.5
+  cost: 1
+  next_visit_on: 2025-10-31
+  memo: MyText
+  cat: two
+  user: two

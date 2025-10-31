@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weight: 1.5
+  appetite: 1
+  water_intake: 1.5
+  urination_count: 1
+  urine_abnormal: false
+  urine_note: MyText
+  defecation_count: 1
+  stool_abnormal: false
+  stool_note: MyText
+  temperature: 1.5
+  overgrooming: false
+  overgrooming_area: MyText
+  vomit_count: 1
+  vomit_condition: MyText
+  cat: one
+
+two:
+  weight: 1.5
+  appetite: 1
+  water_intake: 1.5
+  urination_count: 1
+  urine_abnormal: false
+  urine_note: MyText
+  defecation_count: 1
+  stool_abnormal: false
+  stool_note: MyText
+  temperature: 1.5
+  overgrooming: false
+  overgrooming_area: MyText
+  vomit_count: 1
+  vomit_condition: MyText
+  cat: two
