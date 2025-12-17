@@ -5,5 +5,5 @@ class Cat < ApplicationRecord
   has_many :visit_records, dependent: :destroy
   has_many :preferences, dependent: :destroy
 
-  enum sex: [:male, :female, :unknown]
+  enum :sex, { unknown: 0, male: 1, female: 2 }
 end

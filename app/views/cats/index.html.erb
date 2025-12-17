@@ -1,0 +1,16 @@
+<h1>猫一覧</h1>
+
+<% if @cats.any? %>
+  <table>
+    <% @cats.each do |cat| %>
+      <tr>
+        <td><%= cat.name %></td>
+        <td><%= link_to 'show', cat %></td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <p>まだ猫がいません</p>
+<% end %>
+
+<%= link_to '猫を登録する',new_cat_path %>
