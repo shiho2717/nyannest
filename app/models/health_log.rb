@@ -4,7 +4,7 @@ class HealthLog < ApplicationRecord
   has_many_attached :photo
 
 
-  enum appetite: { good: 0, normal: 1, poor: 2, none: 3 }
+  enum :appetite, { good: 0, normal: 1, poor: 2, none: 3 }
 
 
   validates :appetite, presence: true

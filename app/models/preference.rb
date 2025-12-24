@@ -1,7 +1,7 @@
 class Preference < ApplicationRecord
   belongs_to :cat
 
-    enum category: {
+    enum :category, {
     food: 0,
     toy: 1,
     sound: 2,
@@ -11,7 +11,7 @@ class Preference < ApplicationRecord
     other: 6
   }
 
-  enum reaction: {
+  enum :reaction, {
     like: 0,
     dislike: 1
   }

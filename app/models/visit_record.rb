@@ -4,7 +4,7 @@ class VisitRecord < ApplicationRecord
 
     has_one_attached :photo
 
-  enum reason: {
+  enum :reason, {
     routine: 0,       # 定期健診
     vaccination: 1,   # ワクチン接種
     illness: 2,       # 体調不良
