@@ -7,6 +7,20 @@
   </div>
 
   <div>
+    <%= f.label :birthday,"誕生日" %>
+    <%= f.date_field  :birthday %>
+  </div>
+
+  <div>
+    <%= f.label :sex, "性別" %>
+    <%= f.select :sex, [
+      ["不明", "unknown"],
+      ["オス", "male"],
+      ["メス", "female"]
+    ] %>
+  </div>
+
+  <div>
     <%= f.submit "登録" %>
   </div>
 <% end %>
