@@ -17,6 +17,7 @@
       <% if user_signed_in? %>
         <ul>
           <li>
+            <%= link_to "猫", cats_path%>
             <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete } %>
           </li>
         </ul>
