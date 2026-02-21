@@ -7,6 +7,35 @@
   </div>
 
   <div>
+    <%= f.label :birthday,"誕生日" %>
+    <%= f.date_field  :birthday %>
+  </div>
+
+  <div>
+    <%= f.label :sex, "性別" %>
+    <%= f.select :sex, [
+      ["不明", "unknown"],
+      ["オス", "male"],
+      ["メス", "female"]
+    ] %>
+  </div>
+
+  <div>
+    <%= f.label :breed, "猫種" %>
+    <%= f.text_field  :breed %>
+  </div>
+
+  <div>
+    <%= f.label :pattern, "柄" %>
+    <%= f.text_field  :pattern %>
+  </div>
+
+  <div>
+    <%= f.label :photo, "プロフィール画像" %>
+    <%= f.file_field :photo, accept: "image/*" %>
+  </div>
+
+  <div>
     <%= f.submit "更新" %>
   </div>
 <% end %>

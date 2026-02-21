@@ -62,4 +62,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'devise'
+gem "devise"
+
+gem "image_processing", "~> 1.2"

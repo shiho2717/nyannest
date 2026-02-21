@@ -1,4 +1,15 @@
 <h1><%= @cat.name %></h1>
+<% if @cat.photo.attached? %>
+  <p>プロフィール画像：</p>
+  <%= image_tag @cat.photo,
+        style: "width: 200px; height: 200px; object-fit: cover; border-radius: 8px;" %>
+<% end %>
+<p>誕生日：<%= @cat.birthday %></p>
+<p>性別：
+  <%= { "unknown" => "不明", "male" => "オス", "female" => "メス" }[@cat.sex] %>
+</p>
+<p>猫種：<%= @cat.breed %></p>
+<p>柄：<%= @cat.pattern %></p>
 <%= link_to "編集", edit_cat_path(@cat) %>
 <%= link_to "削除", cat_path(@cat),data: { turbo_method: :delete, turbo_confirm: "本当に削除しますか？" } %>
 
